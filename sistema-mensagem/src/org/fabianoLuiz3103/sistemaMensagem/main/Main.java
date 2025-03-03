@@ -21,6 +21,11 @@ public class Main {
 
     }
 
+    /**
+     *
+     * @param mensagem -> é a mensagem que vai ser disparada pelos diferentes canais de comunicação
+     * @param servicoMensagens -> é a lista de serviçõs/canais de comunicação
+     */
     public static void dispararMensagens(String mensagem, List<ServicoMensagem> servicoMensagens){
         for(ServicoMensagem s: servicoMensagens){
             s.enviarMensagem(mensagem);
